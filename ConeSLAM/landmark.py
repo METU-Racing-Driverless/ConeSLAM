@@ -26,6 +26,10 @@ class Landmark:
         self.x = xy[0]
         self.y = xy[1]
 
+
+'''RBA = Relative Bundle Adjustment: is  problem in computer vision  that consists of finding an optimal estimation to the positions of a set of visual landmarks, and
+camera(sensor) poses from where images were taken landmarks'''
+
     def getRBA(self, state):
         dx = self.x - state[0, 2]
         dy = self.y - state[1, 2]
