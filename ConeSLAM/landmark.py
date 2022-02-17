@@ -30,7 +30,7 @@ class Landmark:
         dx = self.x - state[0, 2]
         dy = self.y - state[1, 2]
         d = math.sqrt((dx ** 2) + (dy ** 2))
-
+    
         yaw = math.acos(state[0, 0])
         zHat = np.array(
             [d,
